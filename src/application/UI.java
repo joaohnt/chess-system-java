@@ -70,6 +70,9 @@ public class UI {
         printCaputuredPieces(captured);
         System.out.println();
         System.out.println("Turn: " + match.getTurn());
+        if(match.getCheck()) {
+            System.out.println("CHECK!");
+        }
         System.out.println("Waiting player: " + match.getCurrentPlayer());
     }
 
