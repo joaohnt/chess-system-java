@@ -3,7 +3,8 @@
 
 # Sobre o projeto
 
-Este projeto é um sistema completo de jogo de xadrez, com todas as regras e jogadas especiais aplicadas.
+Este projeto implementa um sistema de jogo de xadrez completo, com suporte às regras tradicionais do jogo, incluindo as jogadas especiais como roque, en passant e promoção de peão. A implementação foi feita utilizando conceitos de orientação a objetos, o que garante modularidade e flexibilidade no código.
+
 Foi desenvolvido como parte do curso de Java da DevSuperior na Udemy.
 
 ## Modelo conceitual
