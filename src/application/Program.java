@@ -5,6 +5,7 @@ import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
 
+
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -23,7 +24,7 @@ public class Program {
                 UI.clearScreen();
                 UI.printMatch(chessMatch, captured);
                 System.out.println();
-                System.out.printf("Source: ");
+                System.out.print("Source: ");
                 ChessPosition source = UI.readChessPosistion(sc);
 
                 boolean[][] possibleMoves = chessMatch.possibleMoves(source);
@@ -31,19 +32,21 @@ public class Program {
                 UI.printBoard(chessMatch.getPieces(), possibleMoves);
 
                 System.out.println();
-                System.out.printf("Target: ");
+                System.out.print("Target: ");
                 ChessPosition target = UI.readChessPosistion(sc);
 
                 ChessPiece capturedpiece = chessMatch.performChessMove(source, target);
                 if(capturedpiece != null) {
                     captured.add(capturedpiece);
                 }
+
+                if(chessMatch.getPromoted() != null) {
+                    System.out.print("Enter piece for promotion (B/N/R/Q): ");
+                    String type = sc.nextLine();
+                    chessMatch.replacePromotedPiece(type);
+                }
             }
-            catch(ChessException e) {
-                System.out.println(e.getMessage());
-                sc.nextLine();
-            }
-            catch(InputMismatchException e) {
+            catch(ChessException | InputMismatchException e) {
                 System.out.println(e.getMessage());
                 sc.nextLine();
             }
