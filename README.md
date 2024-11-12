@@ -7,13 +7,14 @@ Este projeto é um sistema completo de jogo de xadrez, com todas as regras e jog
 Foi desenvolvido como parte do curso de Java da DevSuperior na Udemy.
 
 ## Modelo conceitual
-![Modelo Conceitual](![image](https://github.com/user-attachments/assets/643231f2-0585-43ee-8168-180bab41a991)
+![Modelo Conceitual](![image]()
 )
 
 # Tecnologias utilizadas
 - Java
 
-# Como executar o projeto
+# Como executar o projeto![chess-system-design](https://github.com/user-attachments/assets/37526844-ac9c-433e-a43b-e121798248c1)
+
 Pré-requisitos: Java
 
 
